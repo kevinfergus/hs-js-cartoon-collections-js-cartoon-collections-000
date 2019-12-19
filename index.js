@@ -1,6 +1,9 @@
 function dwarfRollCall(dwarves) {
   let rollCall = []
   for (let i=0; i<dwarves.length; i++) {
+    if (i<dwarves.length / 2) {
+     continue;
+    }
     rollCall.push(`${i+1}. ${dwarves[i]} `)
   }
   return rollCall.join('')
@@ -38,8 +41,11 @@ function wordsWithB(words) {
   //take in array of words, return new array with all the words from the first array that start with the letter b
   
   let wordsWithB= []
-  
-  let (i=0; i<words.length; i ++) {
-    
+  for ( let i=0; i<words.length; i ++) {
+    let currentWord = words[i]
+    if (currentWord[0]==='b') {
+      wordsWithB.push(currentWord)
+    }
   }
+  return wordsWithB
 }

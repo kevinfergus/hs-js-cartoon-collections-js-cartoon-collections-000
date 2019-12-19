@@ -27,9 +27,19 @@ function longPlaneteerCalls(words) {
 
 function findTheCheese (foods) {
   for (let i = 0; i < foods.length; i ++) {
-    if (foods[i]==='cheddar' || foods[i]==='gouda' || foods[i] === 'camembert') {
+    if (foods[i]==='cheddar' || foods[i]==='gouda' || foods[i] === 'camembert' ||  foods[i]==='swiss') {
       return foods[i]
     }
   }
   return 'no cheese!'
+}
+
+function wordsWithB(words) {
+  //take in array of words, return new array with all the words from the first array that start with the letter b
+  
+  let wordsWithB= []
+  
+  let (i=0; i<words.length; i ++) {
+    
+  }
 }
